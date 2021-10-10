@@ -14,6 +14,7 @@ import { useParams } from 'react-router'
 
 export const ItemListContainer = ({greeting}) => {
     
+    const logo = "./MacanasBro-01.png"
     const [items, setItems] = useState([])
     const [loading, setLoading] = useState(true)
 
@@ -50,8 +51,12 @@ export const ItemListContainer = ({greeting}) => {
          <h1 className="greeting">{greeting}</h1>
             
         
-            { loading ? <h2>Cargando...</h2>
-             : <ItemList productos={items}/>
+            { loading ? <div className="containerLoading">
+                            <img src={logo} className="imgLoading"></img>
+                            <span>Cargando...</span>
+                        </div>
+                        
+            : <ItemList productos={items}/>
             }
             
             
