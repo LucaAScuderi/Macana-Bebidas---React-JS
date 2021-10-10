@@ -1,5 +1,6 @@
 import React from 'react'
 import { CartWidget } from './CartWidget'
+import {NavLink} from 'react-router-dom'
 import {Navbar, Container, Nav} from 'react-bootstrap'
 
 export const NavBar = ({brand}) => {
@@ -11,10 +12,13 @@ export const NavBar = ({brand}) => {
             <Container>
                 <Navbar.Brand href="#home">{brand}</Navbar.Brand>
                 <Nav className="ms-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Bebidas</Nav.Link>
-                <Nav.Link href="#pricing">Contacto</Nav.Link>
-                <CartWidget />
+                    
+                    <NavLink  className="nav-link" activeClassName={'active'} exact to="/">Home</NavLink>
+                    <NavLink className="nav-link" activeClassName={'active'} exact to="/productos">Bebidas</NavLink>
+                    <NavLink className="nav-link" activeClassName={'active'} exact to="/contacto">Contacto</NavLink>
+
+                    <NavLink to="/cart"><CartWidget /></NavLink>
+                
                 </Nav>
             </Container>
         </Navbar>

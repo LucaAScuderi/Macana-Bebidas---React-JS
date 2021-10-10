@@ -3,9 +3,9 @@ import { Item } from './Item'
 
 export const ItemList = ({productos = []}) => {
     return (
-        <div>
+        <>
          
-            <h2>Nuestros productos</h2>
+            <h2 className="text-center mt-5">NUESTROS PRODUCTOS</h2>
             
              : <div className="row"> 
                 
@@ -16,6 +16,6 @@ export const ItemList = ({productos = []}) => {
                 </div>
             
             
-        </div>
+        </>
     )
 }
