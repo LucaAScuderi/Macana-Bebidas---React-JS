@@ -1,0 +1,23 @@
+.containerLoading {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgLoading {
+  width: 200px;
+  height: 200px;
+  transform: rotate(360);
+  animation: rotationLoading 5s linear infinite;
+}
+
+@keyframes rotationLoading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

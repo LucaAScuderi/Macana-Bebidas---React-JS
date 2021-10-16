@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import './NavBar.css'
-
+import "./NavBar.css";
 
 export const CartWidget = () => {
-    return (
-        <div className="shoppingCartIcon">
-            <FaShoppingCart/>
-        </div>
-    )
-}
+  return (
+    <div className="shoppingCartIcon">
+      <FaShoppingCart />
+    </div>
+  );
+};

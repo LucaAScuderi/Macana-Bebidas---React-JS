@@ -1,10 +1,10 @@
-import React from 'react'
-import './ItemListContainer.css'
+import React from "react";
+import "./ItemListContainer.css";
 
-export const ItemListContainer = ({greeting}) => {
-    return (
-        <div>
-            <p className="greeting">{greeting}</p>
-        </div>
-    )
-}
+export const ItemListContainer = ({ greeting }) => {
+  return (
+    <div>
+      <p className="greeting">{greeting}</p>
+    </div>
+  );
+};
