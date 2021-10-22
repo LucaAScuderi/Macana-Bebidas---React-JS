@@ -7,6 +7,7 @@ export const stock = [
     price: 400,
     img: "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3070357_f.jpg",
     category: "vodka",
+    stock: 20,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const stock = [
     price: 1200,
     img: "http://d3ugyf2ht6aenh.cloudfront.net/stores/835/701/products/vodka-absolut-12x7501-9add12842dd92d43d115329861855969-640-0.png",
     category: "vodka",
+    stock: 20,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const stock = [
     price: 120,
     img: "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_569,h_569/https://embero.com/wp-content/uploads/83.jpg",
     category: "cerveza",
+    stock: 20,
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const stock = [
     price: 150,
     img: "https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_569,h_569/https://embero.com/wp-content/uploads/133-1.jpg",
     category: "cerveza",
+    stock: 20,
   },
   {
     id: 5,
@@ -43,5 +47,6 @@ export const stock = [
     price: 600,
     img: "https://www.res.com.ar/media/catalog/product/cache/dbcd7fcd96d4e43f69e3e3703d135006/9/2/92_2048x2048.jpg",
     category: "fernet",
+    stock: 20,
   },
 ];

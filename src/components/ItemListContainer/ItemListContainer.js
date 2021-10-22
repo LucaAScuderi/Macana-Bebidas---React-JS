@@ -5,9 +5,12 @@ import { Loading } from "../Loading/Loading";
 import { ItemList } from "./ItemList";
 import { useParams } from "react-router";
 
+
 export const ItemListContainer = ({ greeting }) => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  
 
   const { categoryId } = useParams();
 
@@ -30,8 +33,6 @@ export const ItemListContainer = ({ greeting }) => {
 
   return (
     <>
-      <h1 className="greeting">{greeting}</h1>
-
       {loading ? <Loading /> : <ItemList productos={items} />}
     </>
   );

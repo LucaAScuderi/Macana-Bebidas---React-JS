@@ -7,7 +7,7 @@ export const ItemList = ({productos = []}) => {
          
             <h2 className="text-center mt-5">NUESTROS PRODUCTOS</h2>
             
-             : <div className="row"> 
+              <div className="row"> 
                     
                     {productos.map((item) => 
                     <Item {...item} key={item.id}/>

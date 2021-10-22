@@ -28,9 +28,9 @@ export const Item = ({
               $ {price},00
             </Card.Text>
 
-            <Link className="btn btn-outline-primary" to={`/detail/${id}`}>
-              <Button variant="btn text-white">Ver detalle</Button>
-            </Link>
+            {/* <Link className="btn btn-outline-primary" to={`/detail/${id}`}> */}
+              <Button variant="btn btn-outline-secondary text-white">Ver detalle</Button>
+            {/* </Link> */}
           </Card.Body>
         </Card>
       </Link>
