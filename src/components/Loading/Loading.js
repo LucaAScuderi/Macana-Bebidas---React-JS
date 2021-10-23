@@ -1,7 +1,6 @@
 import React from "react";
 import "./Loading.css";
 
-
 export const Loading = ({ name }) => {
   const loadingLogo = "../MacanasBro-01.png";
   return (

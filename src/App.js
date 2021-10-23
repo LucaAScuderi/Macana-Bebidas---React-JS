@@ -6,20 +6,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { CartProvider } from "./context/CartContext";
 import { CartScreen } from "./components/CartScreen/CartScreen";
 
-
-
 function App() {
-
-  
-
-  
   return (
     <>
-      
       <CartProvider>
-
-
-      
         <BrowserRouter>
           <NavBar brand="Macana Bebidas" />
 
@@ -46,7 +36,6 @@ function App() {
           </Switch>
         </BrowserRouter>
       </CartProvider>
-      
     </>
   );
 }

@@ -12,9 +12,6 @@ export const Item = ({
   category,
 }) => {
   return (
-
-    
-    
     <Col md={4} lg={3} className="my-5 d-flex justify-content-center">
       <Link to={`/detail/${id}`} style={{ textDecoration: "none" }}>
         <Card className="bg-dark text-white" style={{ width: "15rem" }}>
@@ -28,9 +25,9 @@ export const Item = ({
               $ {price},00
             </Card.Text>
 
-            {/* <Link className="btn btn-outline-primary" to={`/detail/${id}`}> */}
-              <Button variant="btn btn-outline-secondary text-white">Ver detalle</Button>
-            {/* </Link> */}
+            <Button variant="btn btn-outline-secondary text-white">
+              Ver detalle
+            </Button>
           </Card.Body>
         </Card>
       </Link>

@@ -2,14 +2,14 @@ import React from "react";
 
 export const ItemCount = ({ cantidad, modify, max }) => {
   const handleRestar = () => {
-    if (cantidad >= 1){
-        modify(cantidad - 1);
+    if (cantidad >= 1) {
+      modify(cantidad - 1);
     }
   };
 
   const handleSumar = () => {
-    if (cantidad < max){
-        modify(cantidad + 1);
+    if (cantidad < max) {
+      modify(cantidad + 1);
     }
   };
 
