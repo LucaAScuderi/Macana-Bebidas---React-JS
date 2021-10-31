@@ -85,17 +85,14 @@ export const ItemDetail = ({
                       </Link>
                     </div>
                     <div className="col-6">
-                      <p
-                        className="btn btn-info text-white"
-                        onClick={() => goBack()}
-                      >
+                      <Link to="/" className="btn btn-info text-white">
                         Seguir comprando
-                      </p>
+                      </Link>
                     </div>
                   </div>
                 ) : (
                   <>
-                    <h5>
+                    <h5 className="mt-5">
                       <ItemCount
                         cantidad={cantidad}
                         modify={setCantidad}
@@ -103,8 +100,14 @@ export const ItemDetail = ({
                       />
                     </h5>
 
+                    <p className="text-success small">
+                      {stock < 19
+                        ? `¡Apurate! ¡Solo quedan ${stock} unidades!`
+                        : `${stock} unidades disponibles.`}
+                    </p>
+
                     <button
-                      className="btn mt-4 btn-outline-dark"
+                      className="btn mt-4 btn-success"
                       onClick={handleAgregar}
                     >
                       Agregar al carrito

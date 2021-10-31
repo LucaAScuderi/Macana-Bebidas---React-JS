@@ -15,11 +15,21 @@ export const ItemCount = ({ cantidad, modify, max }) => {
 
   return (
     <div>
-      <button className="btn btn-secondary btn-sm" onClick={handleRestar}>
+      <button
+        className={`btn btn-sm ${
+          cantidad < 1 ? "btn-danger disabled" : "btn-secondary"
+        }`}
+        onClick={handleRestar}
+      >
         -
       </button>
       <span className="mx-3">{cantidad}</span>
-      <button className="btn btn-secondary btn-sm" onClick={handleSumar}>
+      <button
+        className={`btn btn-sm ${
+          cantidad === max ? "btn-danger disabled" : "btn-secondary"
+        }`}
+        onClick={handleSumar}
+      >
         +
       </button>
     </div>

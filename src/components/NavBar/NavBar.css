@@ -1,6 +1,26 @@
+.shoppingCartIconEmpty {
+  color: #515151;
+  font-size: 25px;
+  pointer-events: none;
+}
+
 .shoppingCartIcon {
-  color: #F9D78A;
-  font-size: 20px;
+  color: #36ee1a97;
+  font-size: 25px;
+  pointer-events: none;
+  animation-name: shoppingCartIconFill;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes shoppingCartIconFill {
+  from {
+    color: #515151;
+  }
+
+  to {
+    color: #36ee1a97;
+  }
 }
 
 .activeLink {

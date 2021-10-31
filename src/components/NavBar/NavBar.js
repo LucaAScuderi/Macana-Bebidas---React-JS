@@ -7,16 +7,14 @@ export const NavBar = ({ brand }) => {
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg">
-        
         <Container>
           <Link className="navbar-brand" to="/">
             {brand}
           </Link>
-          
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          
+
           <Navbar.Collapse id="basic-navbar-nav">
-            
             <Nav className="ms-auto">
               <NavLink
                 className="nav-link"
@@ -58,7 +56,6 @@ export const NavBar = ({ brand }) => {
                   Vodka
                 </NavLink>
               </NavDropdown>
-
               <NavLink to="/cart">
                 <CartWidget />
               </NavLink>

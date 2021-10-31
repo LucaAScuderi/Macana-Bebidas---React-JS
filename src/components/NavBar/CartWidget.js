@@ -7,9 +7,23 @@ export const CartWidget = () => {
   const { calcularCantidad } = useContext(CartContext);
 
   return (
-    <div className="shoppingCartIcon">
+    <div
+      className={`${
+        calcularCantidad() === 0
+          ? "shoppingCartIconEmpty mb-2"
+          : "shoppingCartIcon mb-0"
+      }`}
+    >
       <FaShoppingCart />
-      <p className="badge text-secondary fs-5 ms-1 p-0">{calcularCantidad()}</p>
+      <p
+        className={`${
+          calcularCantidad() === 0
+            ? "d-none"
+            : "badge text-success fs-5 ms-1 p-0"
+        }`}
+      >
+        {calcularCantidad()}
+      </p>
     </div>
   );
 };
