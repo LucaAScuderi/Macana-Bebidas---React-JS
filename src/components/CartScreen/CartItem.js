@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import "./CartScreen.css";
 
@@ -72,9 +73,17 @@ export const CartItem = () => {
         );
       })}
 
-      <button className="btn btn-danger" onClick={vaciarCarrito}>
+      <Link to="/checkout" className="btn btn-primary ">
+        Terminar compra
+      </Link>
+
+      <button className="btn btn-danger mt-2" onClick={vaciarCarrito}>
         Vaciar Carrito
       </button>
+
+      
+
+      
     </>
   );
 };

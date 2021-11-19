@@ -27,7 +27,7 @@ export const ItemListContainer = ({ greeting }) => {
           return { id: doc.id, ...doc.data() };
         });
 
-        console.log(newItems);
+        
         setItems(newItems);
       })
       .catch((err) => console.log(err))

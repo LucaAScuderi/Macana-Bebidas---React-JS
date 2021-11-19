@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CartProvider } from "./context/CartContext";
 import { CartScreen } from "./components/CartScreen/CartScreen";
+import { Checkout } from "./components/Checkout/Checkout";
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
 
             <Route path="/cart">
               <CartScreen />
+            </Route>
+
+            <Route exact path="/checkout">
+              <Checkout />
             </Route>
           </Switch>
         </BrowserRouter>

@@ -11,7 +11,7 @@ export const CartScreen = () => {
       <div className="row">
         <div className="col-6">
           <h2>Resumen de compra</h2>
-          <h6 className="text-muted">{carrito.length} productos agregados.</h6>
+          <h6 className="text-muted">{carrito.length} producto/s agregado/s.</h6>
         </div>
         <div className="col-6">
           <h3 className="display-6 text-secondary  d-flex justify-content-end">
