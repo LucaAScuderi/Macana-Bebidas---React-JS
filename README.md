@@ -5,11 +5,11 @@ con sus respectivas acciones como son agregar producto a nuestro carrito, modifi
 
 ## Tecnologias Utilizadas
 
-HTML
-CSS
-JAVASCRIPT
-REACT JS
-NPM
+HTML //
+CSS // 
+JAVASCRIPT //
+REACT JS //
+NPM //
 
 VERSION DE NODE: v14.18.0
 
