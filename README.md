@@ -13,3 +13,7 @@ NPM //
 
 VERSION DE NODE: v14.18.0
 
+### Navegación
+
+![image](https://github.com/LucaAScuderi/Macana-Bebidas---React-JS/blob/main/src/macanaBebidasNavegacion.gif)
+
